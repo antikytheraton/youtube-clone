@@ -1,3 +1,5 @@
+import { API_KEY } from './config/variables';
+
 import React from 'react';
 
 import { Grid } from '@material-ui/core';
@@ -16,7 +18,7 @@ class App extends React.Component {
             params: {
                 part: 'snippet',
                 maxResults: 5,
-                key: '[API KEY]',
+                key: API_KEY,
                 q: searchTerm,
             }
         });
